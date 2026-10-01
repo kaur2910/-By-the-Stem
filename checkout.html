@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Demo checkout for Petal & Stem.">
+  <title>Demo checkout | Petal &amp; Stem</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-page="checkout">
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Petal and Stem home">Petal <span>&amp;</span> Stem</a>
+    <nav class="main-nav">
+      <a href="index.html">Flowers</a>
+      <a href="index.html#about">Our story</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <a class="basket-link" href="cart.html">Basket <span id="basket-count">0</span></a>
+  </header>
+
+  <main class="page-main checkout-main">
+    <p class="eyebrow">School project demonstration</p>
+    <h1 class="page-title">Demo checkout</h1>
+    <div class="notice" role="note">
+      <strong>Pickup only:</strong> this flower shop does not deliver. Review the flowers, quantities, and total below before placing your order. This is a school project demonstration: it does not connect to a payment provider, collect card or bank details, charge money, or create a real purchase. When you submit the form, the website saves a demonstration order reference in this browser only. The shop would need to contact the customer separately to agree on a pickup time and location. Please do not travel to collect flowers based on this demo confirmation.
+    </div>
+    <p id="checkout-message" class="status-message" aria-live="polite"></p>
+    <div id="checkout-summary" class="checkout-summary"></div>
+    <form id="checkout-form" class="checkout-form" novalidate>
+      <label for="customer-name">Name for the demo order</label>
+      <input id="customer-name" name="customerName" type="text" maxlength="60" autocomplete="name" required>
+      <p id="name-error" class="field-error" role="alert"></p>
+      <label class="checkbox-label" for="demo-confirm">
+        <input id="demo-confirm" name="demoConfirm" type="checkbox" required>
+        I understand this is a demo and no real payment will be made.
+      </label>
+      <p id="confirm-error" class="field-error" role="alert"></p>
+      <button class="button" type="submit">Place demo order</button>
+    </form>
+    <section id="order-confirmation" class="confirmation" aria-live="polite" hidden>
+      <p class="eyebrow">Order saved for this demonstration</p>
+      <h2>Thank you, <span id="confirmation-name"></span>.</h2>
+      <p id="confirmation-number"></p>
+      <p id="confirmation-total"></p>
+      <a class="button" href="index.html">Return to the flower shop</a>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div><strong>Petal &amp; Stem</strong><p>Questions about a bunch? Get in touch with our flower shop.</p></div>
+    <p class="demo-note">School project demo shop · Checkout does not process real payments</p>
+  </footer>
+</body>
+</html>
