@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse seasonal flowers at Petal & Stem.">
+  <title>Petal &amp; Stem | Flower Shop</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-page="catalog">
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Petal and Stem home">Petal <span>&amp;</span> Stem</a>
+    <nav class="main-nav">
+      <a class="active" href="index.html">Flowers</a>
+      <a href="#about">Our story</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="basket-link" href="cart.html">Basket <span id="basket-count">0</span></a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Seasonal flowers, thoughtfully gathered</p>
+        <h1>A little joy in every bunch.</h1>
+        <p>Explore cheerful seasonal flowers, choose a bunch for someone special, and arrange pickup after placing your demo order.</p>
+        <a class="button" href="#flowers">Browse the flowers</a>
+      </div>
+      <div class="hero-art" aria-hidden="true"><span>✿</span><span>❀</span><span>✾</span><span>❁</span></div>
+    </section>
+
+    <section class="shop-section" id="flowers">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">The collection</p>
+          <h2>Find your flowers</h2>
+        </div>
+        <p>Choose a category or sort the collection to find a bunch you love.</p>
+      </div>
+
+      <div class="shop-controls">
+        <label>Category
+          <select id="category-filter">
+            <option value="all">All flowers</option>
+            <option value="Soft & romantic">Soft &amp; romantic</option>
+            <option value="Bright & cheerful">Bright &amp; cheerful</option>
+            <option value="Seasonal">Seasonal</option>
+            <option value="Statement">Statement</option>
+          </select>
+        </label>
+        <label>Sort by
+          <select id="sort-order">
+            <option value="featured">Featured</option>
+            <option value="price-low-high">Price: low to high</option>
+            <option value="price-high-low">Price: high to low</option>
+            <option value="name-a-z">Name: A to Z</option>
+          </select>
+        </label>
+      </div>
+
+      <p id="catalog-message" class="status-message" aria-live="polite"></p>
+      <div id="flower-grid" class="flower-grid"></div>
+    </section>
+
+    <section class="story-section" id="about">
+      <p class="eyebrow">A note from our florist</p>
+      <h2>Flowers for the moments that matter.</h2>
+      <p>Petal &amp; Stem brings together seasonal colours and simple, thoughtful arrangements. Browse the collection, compare options, and select flowers that suit the occasion.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div><strong>Petal &amp; Stem</strong><p>Questions about a bunch? Get in touch with our flower shop.</p></div>
+    <p class="demo-note">School project demo shop · Checkout does not process real payments</p>
+  </footer>
+</body>
+</html>
