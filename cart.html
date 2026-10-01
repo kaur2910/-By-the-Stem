@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Review your flower basket at Petal & Stem.">
+  <title>Your basket | Petal &amp; Stem</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-page="cart">
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Petal and Stem home">Petal <span>&amp;</span> Stem</a>
+    <nav class="main-nav">
+      <a href="index.html">Flowers</a>
+      <a href="index.html#about">Our story</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <a class="basket-link active" href="cart.html">Basket <span id="basket-count">0</span></a>
+  </header>
+
+  <main class="page-main">
+    <p class="eyebrow">Your selection</p>
+    <h1 class="page-title">Your basket</h1>
+    <p id="cart-message" class="status-message" aria-live="polite"></p>
+    <div id="cart-items" class="cart-items"></div>
+    <section id="cart-summary" class="cart-summary" hidden>
+      <p class="total-line">Subtotal <strong id="cart-total"></strong></p>
+      <p class="demo-note">This is a school demo. No real payment will be taken.</p>
+      <a class="button" href="checkout.html">Continue to demo checkout</a>
+    </section>
+    <a class="back-link" href="index.html#flowers">Continue browsing flowers</a>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div><strong>Petal &amp; Stem</strong><p>Questions about a bunch? Get in touch with our flower shop.</p></div>
+    <p class="demo-note">School project demo shop · Checkout does not process real payments</p>
+  </footer>
+</body>
+</html>
