@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Flower details at Petal & Stem.">
+  <title>Flower details | Petal &amp; Stem</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-page="product">
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Petal and Stem home">Petal <span>&amp;</span> Stem</a>
+    <nav class="main-nav">
+      <a class="active" href="index.html">Flowers</a>
+      <a href="index.html#about">Our story</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <a class="basket-link" href="cart.html">Basket <span id="basket-count">0</span></a>
+  </header>
+
+  <main class="page-main">
+    <a class="back-link" href="index.html#flowers">← Back to all flowers</a>
+    <p id="product-message" class="status-message" aria-live="polite"></p>
+    <section id="product-detail" class="product-detail" hidden>
+      <div id="product-art" class="product-detail-art" aria-hidden="true"></div>
+      <div class="product-detail-copy">
+        <p id="product-category" class="eyebrow"></p>
+        <h1 id="product-name"></h1>
+        <p id="product-description" class="body-copy"></p>
+        <p id="product-price" class="product-price"></p>
+        <p id="product-stock" class="stock-message"></p>
+        <label class="quantity-label" for="product-quantity">Quantity</label>
+        <input id="product-quantity" class="quantity-input" type="number" min="1" step="1" value="1">
+        <button id="add-to-basket" class="button" type="button">Add to basket</button>
+        <p class="demo-note">Demo checkout only. No real payment will be taken.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div><strong>Petal &amp; Stem</strong><p>Questions about a bunch? Get in touch with our flower shop.</p></div>
+    <p class="demo-note">School project demo shop · Checkout does not process real payments</p>
+  </footer>
+</body>
+</html>
